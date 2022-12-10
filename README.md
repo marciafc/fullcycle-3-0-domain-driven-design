@@ -1,6 +1,6 @@
-# Domain Driven Design
+# Domain Driven Design (DDD)
 
-- DDD
+- [Certificado](https://fullcycle.com.br/certificado/a03f43e3-7830-4a7b-9379-7a8e38f2bbb7)
 
 ## Introdução
 
@@ -122,3 +122,71 @@
 - Na hora de quebrar um monolito para microsserviços tem que reescrever tudo se nao estiver bem delimitado, se estiver em uma única classe servindo todo o sistema
 
   </details>
+
+## Visão estratégica
+
+<details>
+  <summary>Visualizar</summary>
+
+- Context Mapping
+
+### Context mapping na prática
+
+- Modelagem estratégica / Context Mapping
+- Domain experts específicos para cada tipo de problema
+
+<img src="modelagem-estrategica.png">
+
+- Shared kernel -> núcleo compartilhado
+
+  - biblioteca, algo compartilhado entre os times, poderia ser um SDK
+
+- Relação de parceria
+
+- Relação Cliente/Fornecedor
+
+  - um fornece o serviço e o outro consome
+
+  - U -> upstream
+
+  - D -> downstream
+
+- Relação conformista
+
+- ACL (Anticorruption Layer) - camada anticorrupção, é uma camada de adaptação, de interfaces, funciona como um adaptador
+
+### Padrões e starter kit
+
+- Padrões de Context Mapping
+
+  - Partnership (padrão de parceria)
+
+  - Shared kernel
+
+  - Customer-Supplier Development (cliente/fornecedor)
+
+  - Conformist (conformista)
+
+  - Anticorruption Layer
+
+  - Open host service
+
+    - API REST
+
+    - gRPC
+
+  - Published language (linguagem publicada)
+
+  - Separate ways
+
+  - Big Ball of Mud
+
+- Started kit
+
+  - [Context Mapping - Github](https://github.com/ddd-crew/context-mapping)
+
+  - [Remote Context Mapping Starter Kit for Miro](https://github.com/ddd-crew/context-mapping#remote-context-mapping-starter-kit-for-miro)
+
+    - [Versão read-only version do starter kit no Miro](https://miro.com/app/board/o9J_kqtuB6A=/)
+
+</details>
